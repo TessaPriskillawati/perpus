@@ -1,0 +1,805 @@
+CRITICAL - 2022-06-21 04:32:31 --> Undefined variable: denda
+in APPPATH\Controllers\Pengembalian.php on line 38.
+ 1 APPPATH\Controllers\Pengembalian.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: denda', 'APPPATH\\Controllers\\Pengembalian.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 04:33:36 --> Undefined variable: denda
+in APPPATH\Controllers\Pengembalian.php on line 38.
+ 1 APPPATH\Controllers\Pengembalian.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: denda', 'APPPATH\\Controllers\\Pengembalian.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 04:35:02 --> Argument 3 passed to CodeIgniter\HTTP\Request::fetchGlobal() must be of the type int or null, array given, called in D:\FOTO KOPI TESSA\rpl\perpus\perpus\system\HTTP\IncomingRequest.php on line 602
+in SYSTEMPATH\HTTP\RequestTrait.php on line 217.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(602): CodeIgniter\HTTP\Request->fetchGlobal('post', 'denda', [...], null)
+ 2 APPPATH\Controllers\Pengembalian.php(38): CodeIgniter\HTTP\IncomingRequest->getPost('denda', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 04:37:31 --> Column 'denda' cannot be null
+CRITICAL - 2022-06-21 04:37:31 --> Column 'denda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (:kode_pinjam:, :id_anggota:, :nama_anggota:, :tgl_haruskembali:, :tgl_kembali:, :denda:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pengembalian.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 05:18:21 --> Column 'denda' cannot be null
+CRITICAL - 2022-06-21 05:18:21 --> Column 'denda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (\'P001\', \'A001\', \'ari\', \'2022-06-21\', \'2022-06-23\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengembalian` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tgl_haruskembali`, `tgl_kembali`, `denda`) VALUES (:kode_pinjam:, :id_anggota:, :nama_anggota:, :tgl_haruskembali:, :tgl_kembali:, :denda:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pengembalian.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 05:58:57 --> Undefined variable: Peminjaman
+in APPPATH\Views\pages\datapinjam.php on line 33.
+ 1 APPPATH\Views\pages\datapinjam.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Peminjaman', 'APPPATH\\Views\\pages\\datapinjam.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datapinjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datapinjam', [], true)
+ 5 APPPATH\Controllers\Pengembalian.php(15): view('pages/datapinjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 05:59:31 --> Undefined variable: Peminjaman
+in APPPATH\Views\pages\datapinjam.php on line 33.
+ 1 APPPATH\Views\pages\datapinjam.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Peminjaman', 'APPPATH\\Views\\pages\\datapinjam.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datapinjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datapinjam', [], true)
+ 5 APPPATH\Controllers\Pengembalian.php(15): view('pages/datapinjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 05:59:36 --> Undefined variable: Peminjaman
+in APPPATH\Views\pages\datapinjam.php on line 33.
+ 1 APPPATH\Views\pages\datapinjam.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Peminjaman', 'APPPATH\\Views\\pages\\datapinjam.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datapinjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datapinjam', [], true)
+ 5 APPPATH\Controllers\Pengembalian.php(15): view('pages/datapinjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 05:59:39 --> Undefined variable: Peminjaman
+in APPPATH\Views\pages\datapinjam.php on line 33.
+ 1 APPPATH\Views\pages\datapinjam.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Peminjaman', 'APPPATH\\Views\\pages\\datapinjam.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datapinjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datapinjam', [], true)
+ 5 APPPATH\Controllers\Pengembalian.php(15): view('pages/datapinjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 05:59:42 --> Duplicate entry 'P002' for key 'PRIMARY'
+CRITICAL - 2022-06-21 05:59:42 --> Duplicate entry 'P002' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`) VALUES (\'P002\', \'A003\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`) VALUES (\'P002\', \'A003\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`) VALUES (\'P002\', \'A003\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`) VALUES (:kode_pinjam:, :id_anggota:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pengembalian.php(36): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->simpankembali()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 06:01:18 --> Undefined variable: pengembalian
+in APPPATH\Views\pages\datakembali.php on line 30.
+ 1 APPPATH\Views\pages\datakembali.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pengembalian', 'APPPATH\\Views\\pages\\datakembali.php', 30, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datakembali.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datakembali', [], true)
+ 5 APPPATH\Controllers\Pengembalian.php(15): view('pages/datakembali', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 06:05:12 --> Duplicate entry 'P004' for key 'PRIMARY'
+CRITICAL - 2022-06-21 06:05:12 --> Duplicate entry 'P004' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `judul`, `jumlah`) VALUES (\'P004\', \'A001\', \'Arum\', \'2022-06-07\', \'Bulan\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `judul`, `jumlah`) VALUES (\'P004\', \'A001\', \'Arum\', \'2022-06-07\', \'Bulan\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `judul`, `jumlah`) VALUES (\'P004\', \'A001\', \'Arum\', \'2022-06-07\', \'Bulan\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjaman` (`kode_pinjam`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `judul`, `jumlah`) VALUES (:kode_pinjam:, :id_anggota:, :nama_anggota:, :tanggal_pinjam:, :judul:, :jumlah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peminjaman.php(39): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->simpanpinjam()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 09:30:50 --> Undefined index: kode
+in APPPATH\Views\pages\datapinjam.php on line 47.
+ 1 APPPATH\Views\pages\datapinjam.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode', 'APPPATH\\Views\\pages\\datapinjam.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\datapinjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/datapinjam', [], true)
+ 5 APPPATH\Controllers\Peminjaman.php(15): view('pages/datapinjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:43:27 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:43:27 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:50:27 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:50:27 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:53:12 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:53:12 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:55:06 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:55:06 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:55:16 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:55:16 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:57:26 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:57:26 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:58:14 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:58:14 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:58:42 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:58:42 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:58:45 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:58:45 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 09:59:19 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 09:59:19 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 10:03:44 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 10:03:44 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 10:03:47 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 10:03:47 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 10:04:31 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 10:04:31 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:05:47 --> Too few arguments to function App\Controllers\Peminjaman::edit(), 0 passed in D:\FOTO KOPI TESSA\rpl\perpus\perpus\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Peminjaman.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:05:56 --> Too few arguments to function App\Controllers\Peminjaman::edit(), 0 passed in D:\FOTO KOPI TESSA\rpl\perpus\perpus\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Peminjaman.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:06:36 --> Too few arguments to function App\Controllers\Peminjaman::edit(), 0 passed in D:\FOTO KOPI TESSA\rpl\perpus\perpus\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Peminjaman.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:07:10 --> Too few arguments to function App\Controllers\Peminjaman::edit(), 0 passed in D:\FOTO KOPI TESSA\rpl\perpus\perpus\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Peminjaman.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 10:07:38 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 10:07:38 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:09:34 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 182.
+ 1 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 2 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 10:09:52 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 10:09:52 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:52:59 --> Call to undefined method App\Models\PeminjamanModel::getPeminjaman
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getPeminjaman', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:13 --> Call to undefined method App\Models\PeminjamanModel::getPeminjaman
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getPeminjaman', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:52 --> Call to undefined method App\Models\PeminjamanModel::getVar
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getVar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:53 --> Call to undefined method App\Models\PeminjamanModel::getVar
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getVar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:54 --> Call to undefined method App\Models\PeminjamanModel::getVar
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getVar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:54 --> Call to undefined method App\Models\PeminjamanModel::getVar
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getVar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 10:53:54 --> Call to undefined method App\Models\PeminjamanModel::getVar
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(57): CodeIgniter\Model->__call('getVar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:04:15 --> Undefined variable: pinjam
+in APPPATH\Views\pages\editpeminjaman.php on line 21.
+ 1 APPPATH\Views\pages\editpeminjaman.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pinjam', 'APPPATH\\Views\\pages\\editpeminjaman.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\editpeminjaman.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/editpeminjaman', [], true)
+ 5 APPPATH\Controllers\Peminjaman.php(52): view('pages/editpeminjaman', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:16:07 --> Undefined property: App\Controllers\Peminjaman::$PeminjamanModel
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 APPPATH\Controllers\Peminjaman.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$PeminjamanModel', 'APPPATH\\Controllers\\Peminjaman.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:18:00 --> Array to string conversion
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 APPPATH\Controllers\Peminjaman.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Peminjaman.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:18:19 --> Object of class App\Models\PeminjamanModel could not be converted to string
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:18:55 --> Object of class App\Models\PeminjamanModel could not be converted to string
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:18:56 --> Object of class App\Models\PeminjamanModel could not be converted to string
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:18:57 --> Object of class App\Models\PeminjamanModel could not be converted to string
+in APPPATH\Controllers\Peminjaman.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 11:20:11 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 11:20:11 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:23:22 --> Object of class App\Models\PeminjamanModel could not be converted to string
+in APPPATH\Controllers\Peminjaman.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:23:54 --> Undefined property: App\Controllers\Peminjaman::$PeminjamanModel
+in APPPATH\Controllers\Peminjaman.php on line 47.
+ 1 APPPATH\Controllers\Peminjaman.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$PeminjamanModel', 'APPPATH\\Controllers\\Peminjaman.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:35 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:37 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:37 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:38 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:38 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:38 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:39 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:39 --> Undefined property: App\Controllers\Peminjaman::$peminjamanpodel
+in APPPATH\Controllers\Peminjaman.php on line 54.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjaman::$peminjamanpodel', 'APPPATH\\Controllers\\Peminjaman.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-21 11:32:52 --> Call to undefined method App\Models\PeminjamanModel::getKodeMahasiswa
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\Model->__call('getKodeMahasiswa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 11:33:38 --> Unknown column 'peminjaman.id' in 'where clause'
+CRITICAL - 2022-06-21 11:33:38 --> Unknown column 'peminjaman.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = \'P001\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjaman`
+WHERE `peminjaman`.`id` = :peminjaman.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'P001')
+ 7 APPPATH\Controllers\Peminjaman.php(54): CodeIgniter\BaseModel->find('P001')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->edit('P001')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-21 11:34:58 --> Duplicate entry 'P001' for key 'PRIMARY'
+CRITICAL - 2022-06-21 11:34:58 --> Duplicate entry 'P001' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `peminjaman` (`kode_pinjam`, `kode_buku`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `tanggal_kembali`, `judul`, `jumlah`, `status`) VALUES (\'P001\', \'B001\', \'A001\', \'Arum\', \'2022-06-01\', \'2022-06-08\', \'Bulan\', \'1\', \'sudah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `peminjaman` (`kode_pinjam`, `kode_buku`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `tanggal_kembali`, `judul`, `jumlah`, `status`) VALUES (\'P001\', \'B001\', \'A001\', \'Arum\', \'2022-06-01\', \'2022-06-08\', \'Bulan\', \'1\', \'sudah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `peminjaman` (`kode_pinjam`, `kode_buku`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `tanggal_kembali`, `judul`, `jumlah`, `status`) VALUES (\'P001\', \'B001\', \'A001\', \'Arum\', \'2022-06-01\', \'2022-06-08\', \'Bulan\', \'1\', \'sudah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjaman` (`kode_pinjam`, `kode_buku`, `id_anggota`, `nama_anggota`, `tanggal_pinjam`, `tanggal_kembali`, `judul`, `jumlah`, `status`) VALUES (:kode_pinjam:, :kode_buku:, :id_anggota:, :nama_anggota:, :tanggal_pinjam:, :tanggal_kembali:, :judul:, :jumlah:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Peminjaman.php(75): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Peminjaman->update()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
